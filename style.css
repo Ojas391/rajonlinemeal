@@ -1,0 +1,388 @@
+/* Css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+  scroll-behavior: smooth;
+}
+/* Navigation bar logo and images */
+
+#logo{
+    margin: 6px 15px;
+    cursor: pointer;
+}
+#logo img{
+    margin: 3px 4px;
+    height: 60px;
+}
+
+
+/* Navagation bar list */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+#navbar::before{
+    position: absolute;
+    content: "";
+    background-color: black;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: 'Baloo Bhai', cursive;
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 26px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    transition: all 1s ease-in-out;
+}
+#navbar ul li a:hover{
+    border-radius: 22px;
+    color: black;
+    background-color: white;
+    font-size: 20px;
+}
+
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 490px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('bg1.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 578px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+#home h1{
+    color:white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+#btn1{
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+.btn{
+    background-color: brown;
+    color: white;
+    margin: 7px;
+    font-size: 1.3rem;
+    opacity: 1;
+    transition: all 1s ease-in-out;
+    border: 2px solid white;
+    border-radius: 12px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    font-size: 1.5rem;
+    background-color: black;
+    opacity: 0.5;
+    border-radius: 20px;
+}
+
+/* Services section */
+.services{
+    display: flex;
+    margin: 30px;
+}
+
+.services .box{
+    border: 2px solid brown;
+    padding: 15px;
+    margin: 2px 6px;
+    border-radius: 29px;
+    height: 425px;
+    background: #f2f2f2;
+}
+
+
+.services img{
+    height: 160px;
+    display: block;
+    margin: auto;
+    transition: all 2s ease-in-out;
+}
+.services img:hover{
+    height: 190px;
+    display: block;
+    margin: auto;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: cyan;
+    cursor: pointer;
+}
+
+.services .box p{
+    text-align: center;
+    font-family: 'Baloo Bhai', cursive;
+}
+#services-container{
+    position: relative;
+}
+#services-container::before{ 
+    content: "";
+    position: absolute;
+    background: url('download.jpg') no-repeat center center/cover;
+    height: 608px;
+    width: 100%;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+#services-container h1{
+    color: rgba(250, 238, 238, 0.795);
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+#services-container h1:hover{
+    display: block;
+    color: black;
+    background-color: #f2f2f2; 
+    font-size: 2.8rem;
+}
+
+/* Clients section */
+#clients-section::before{
+    content: "";
+    position: absolute;
+    background: url("bg.jpg");
+    height: 54%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+
+.clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients-item img{
+    height: 150px;
+    padding: 34px;
+}
+
+/* contact us section */
+
+
+#contact-us::before{
+    content: "";
+    position: absolute;
+    background: url('contact.jpg') no-repeat center center/cover;
+    height: 450px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+.contact textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+.contact form{
+    width: 40%;
+}
+
+.contact label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+
+.input1 input{
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    margin: 34px;
+    text-align: center;
+}
+
+.center{
+    text-align: center;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans",sans-serif;
+  }
+  
+  footer{
+    background:#dde1d9;
+    padding: 90px 0;
+  }
+  
+  .footer-container{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+  }
+  
+  .logo{
+    width: 180px;
+  }
+  
+  .social-media{
+    margin: 20px 0;
+  }
+  
+  .social-media a{
+    color: #001a21;
+    margin-right: 25px;
+    font-size: 22px;
+    text-decoration: none;
+    transition: .3s linear;
+  }
+  
+  .social-media a:hover{
+    color: #fc5c65;
+  }
+  
+  .right-col h1{
+    font-size: 26px;
+  }
+  
+  .border{
+    width: 100px;
+    height: 4px;
+    background: #fc5c65;
+  }
+  
+  .newsletter-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .txtb{
+    flex: 1;
+    padding: 18px 40px;
+    font-size: 16px;
+    color: #293043;
+    background: #ddd;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    min-width: 260px;
+  }
+  
+  .submit{
+    padding: 18px 40px;
+    font-size: 16px;
+    color: #f1f1f1;
+    background: #fc5c65;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+  }
+  
+  .submit:hover{
+    background-color: black;
+    font-size: 1.3rem;
+    opacity: .7;
+  }
+  
+  .page-content{
+    min-height: 100vh;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @media screen and (max-width:960px) {
+    .footer-container{
+      max-width: 600px;
+    }
+    .right-col{
+      width: 100%;
+      margin-bottom: 60px;
+    }
+  
+    .left-col{
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  
+  @media screen and (max-width:700px){
+    .btn{
+      margin: 0;
+      width: 100%;
+      margin-top: 20px;
+      }
+  }
